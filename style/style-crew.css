@@ -1,0 +1,516 @@
+html {
+    font-size: 10px;
+    min-height: 100% !important;
+    background: url(../assets/crew/background-crew-desktop.jpg) no-repeat center / cover;
+
+}
+
+body {
+    margin: 0;
+    
+}
+
+header {
+    display: flex;
+    padding-left: 55px;
+    padding-top: 40px;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bar {
+    margin-left: 20px;
+    width: 473px;
+    height: 1px;
+
+    background: hsl(0, 0%, 100%);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+#hamburger{
+    position: relative;
+    z-index: 1000;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+}
+
+.open {
+    background: url(../assets/shared/icon-hamburger.svg) no-repeat center / contain;
+}
+
+.close {
+    background: url(../assets/shared/icon-close.svg) no-repeat center / contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-left: 100px;
+    margin-right: 150px;
+    padding: 0;
+}
+
+.link {
+    margin: 0 20px;
+    padding: 40px 0;
+}
+
+nav .active {
+    border-bottom: 3px solid hsl(0, 0%, 100%);
+}
+
+.link a:hover {
+    border-bottom: 3px solid hsl(0, 0%, 100%, 0.5);
+}
+
+.link a {
+    display: inline-block;
+    height: 100%;
+    text-decoration: none;
+    letter-spacing: 2.7px;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+
+.link span {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
+
+}
+
+.container {
+    padding: 75px 135px 0px 165px;
+}
+
+.container h5 {
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.container h5 span {
+    display: inline-block;
+    margin-right: 28px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%, 0.25);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member {
+    width: 488px;
+}
+
+#role {
+    margin: 0;
+    margin-top: 150px;
+    color: hsl(0, 0%, 100%, 0.5);
+}
+
+#name {
+    margin-top: 15px;
+    margin-bottom: 27px;
+}
+
+.photo img {
+    display: block;
+    height: 100%
+}
+
+#slider {
+    margin-top: 120px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+#slider button {
+    display: inline-block;
+    margin-right: 24px;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background: hsl(0, 0%, 100%, 0.17);
+    border: none;
+
+}
+
+#slider button:hover {
+    background: hsl(0, 0%, 100%, 0.5);
+    cursor: pointer;
+}
+
+#slider .active {
+    background: hsl(0, 0%, 100%);
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 56px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    color: hsl(231, 77%, 90%);
+}
+
+p {
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: hsl(231, 77%, 90%);
+    
+    line-height: 32px;
+
+    padding-right: 40px;
+}
+
+.sh1 {
+    margin: 0;
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: hsl(0, 0%, 100%);
+}
+
+.description .sh2 {
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    color: hsl(231, 77%, 90%);
+
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    html {
+        height: initial;
+        min-height: 100% !important;
+        background: url(../assets/crew/background-crew-mobile.jpg) no-repeat center / cover;
+    }
+
+    body {
+        background: none;
+        height: auto;
+        min-height: 100% !important;
+    }
+
+    header {
+        padding: 24px;
+        padding-bottom: 0;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    nav {
+        box-sizing: border-box;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70vw;
+        height: 100vh;
+        padding-top: 120px;
+        padding-left: 35px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        
+    }
+
+    .link {
+        margin: 16px 0;
+        padding: 0;
+    }
+
+    .link a {
+        padding-bottom: 10px;
+    }
+
+    .container {
+        padding: 24px;
+    }
+
+    .container h5 span {
+        margin-right: 18px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo {
+        order: 1;
+        height: 225px;
+        margin: 32px 0;
+
+        border-bottom: 1px solid hsla(231, 15%, 26%, 1);
+    }
+
+    #image {
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    .member {
+        padding-bottom: 80px;
+        width: 100%;
+        order: 2;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #role {
+        margin: 0;
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    .slider {
+        order: 1;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    #slider {
+        margin: 0;
+    }
+
+    #slider button {
+        margin: 0 10px;
+    }
+
+    #role {
+        order: 2;
+    }
+
+    #name {
+        order: 3;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    #bio {
+        order: 4;
+    }
+
+    h1 {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    h2 {        
+        font-size: 56px;
+        line-height: 64px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        text-align: center;
+    }
+
+    p {
+        padding: 0;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+
+    html {
+        background: url(../assets/crew/background-crew-tablet.jpg) no-repeat center / cover;
+    }
+
+    body {
+        height: auto;
+        min-height: 100% !important;
+    }
+
+    header {
+        padding: 0;
+        padding-left: 24px;
+        font-size: 14px;
+    }
+
+    .bar {
+        display: none;
+    }
+    
+    nav {
+        backdrop-filter: none;
+    }
+
+    nav ul {
+        margin: 0 48px;
+    }
+
+    .link span {
+        display: none;
+    }
+
+    .container {
+        padding: 38px;
+        padding-bottom: 0;
+    }
+
+    .container h5 span {
+        margin-right: 16px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+    
+    .member {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 140px;
+        padding-top: 60px;
+    }
+
+    #role {
+        margin: 0;
+    }
+
+    #name {
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    .slider {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    #slider {
+        margin-top: 40px;
+    }
+    
+    #slider button {
+        margin: 0 10px;
+    }
+
+    .photo {
+        margin-top: 40px;
+    }
+
+    .photo img {
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    p {
+        padding: 0;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+}

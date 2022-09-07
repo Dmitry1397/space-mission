@@ -1,0 +1,373 @@
+html {
+    height: 100%;
+    font-size: 10px;
+
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: url(../assets/home/background-home-desktop.jpg) no-repeat center / cover   ;
+}
+
+header {
+    display: flex;
+    padding-left: 55px;
+    padding-top: 40px;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bar {
+    margin-left: 20px;
+    width: 473px;
+    height: 1px;
+
+    background: hsl(0, 0%, 100%);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+#hamburger{
+    position: relative;
+    z-index: 1000;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+}
+
+.open {
+    background: url(../assets/shared/icon-hamburger.svg) no-repeat center / contain;
+}
+
+.close {
+    background: url(../assets/shared/icon-close.svg) no-repeat center / contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-left: 100px;
+    margin-right: 150px;
+    padding: 0;
+}
+
+.link {
+    margin: 0 20px;
+    padding: 40px 0;
+}
+
+nav .active {
+    border-bottom: 3px solid hsl(0, 0%, 100%);
+}
+
+.link a:hover {
+    border-bottom: 3px solid hsl(0, 0%, 100%, 0.5);
+}
+
+.link a {
+    display: inline-block;
+    height: 100%;
+    text-decoration: none;
+    letter-spacing: 2.7px;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+
+.link span {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
+
+}
+
+.explore {
+    display: flex;
+    padding: 15vh 165px 43px 165px;
+    justify-content: space-between;
+}
+
+.space {
+    width: 450px;
+}
+
+.space h1 {
+    margin: 24px 0;
+}
+
+.space h5, .space p {
+    margin: 0;
+}
+
+.go-to {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    border-radius: 450px;
+    border: 90px solid transparent;
+    box-sizing: border-box;
+    justify-content: end;
+}
+
+.go-to:hover {
+    border: 90px solid hsl(0, 0%, 100%, 0.1);
+}
+
+.go-to a {
+    display: flex;
+    width: 270px;
+    height: 270px;
+    border-radius: 270px;
+    background: hsl(0, 0%, 100%);
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: hsl(230, 35%, 7%);
+}
+
+
+
+h1, h2, h3, h4, h5{
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 56px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    color: hsl(231, 77%, 90%);
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: hsl(231, 77%, 90%);
+    text-align: justify;
+    line-height: 32px;
+}
+
+@media screen and (max-width: 600px) {
+
+    html {
+        height: initial;
+        min-height: 100% !important;
+        background: url(../assets/home/background-home-mobile.jpg) no-repeat center / cover;
+    }
+
+    body {
+        background: none;
+        height: auto;
+        min-height: 100% !important;
+        position: relative;
+    }
+
+    header {
+        padding: 24px;
+        padding-bottom: 0;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    nav {
+        box-sizing: border-box;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70vw;
+        height: 100vh;
+        padding-top: 120px;
+        padding-left: 35px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        
+    }
+
+    .link {
+        margin: 16px 0;
+        padding: 0;
+    }
+
+    .link a {
+        padding-bottom: 10px;
+    }
+
+    .explore {
+        display: block;
+        margin-top: 100px;
+        padding: 24px;
+    }
+
+    .space {
+        width: 100%;
+        text-align: center;
+    }
+
+    .space h1 {
+        margin: 16px 0;
+    }
+
+    .go-to {
+        margin-top: 80px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+        border: none;
+        justify-content: center;
+    }
+
+    .go-to a {
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    h5 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: center;
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+
+    html {
+        background: url(../assets/home/background-home-tablet.jpg) no-repeat center / cover;
+    }
+
+    body {
+        height: auto;
+        min-height: 100% !important;
+    }
+
+    header {
+        padding: 0;
+        padding-left: 24px;
+        font-size: 14px;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    nav {
+        backdrop-filter: none;
+    }
+
+    nav ul {
+        margin: 0 48px;
+    }
+
+    .link span {
+        display: none;
+    }
+
+    .explore {
+        display: block;
+        margin-top: 100px;
+        padding: 24px;
+    }
+
+    .space {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .go-to {
+        margin-top: 150px;
+        margin-bottom: 90px;
+        width: 100%;
+        height: auto;
+        border: none;
+        justify-content: center;
+    }
+
+    .go-to a {
+        width: 242px;
+        height: 242px;
+        font-size: 32px;
+    }
+
+    h5 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+}
