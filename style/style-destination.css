@@ -309,6 +309,7 @@ p {
     }
 
     .link a {
+        padding-top: 20px;
         padding-bottom: 10px;
     }
 
@@ -355,6 +356,11 @@ p {
         line-height: 17px;
         letter-spacing: 2.3625px;
     }  
+
+    .switch button:hover {
+        border-bottom: 3px solid hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
 
     .description h2 {
         margin-top: 20px;
@@ -461,6 +467,11 @@ p {
     .switch {
         width: fit-content;
         margin: 0 auto;
+    }
+
+    .switch button:hover {
+        border-bottom: 3px solid hsl(0, 0%, 100%);
+        cursor: pointer;
     }
 
     .switch li {

@@ -251,6 +251,7 @@ p {
     }
 
     .link a {
+        padding-top: 20px;
         padding-bottom: 10px;
     }
 
@@ -276,6 +277,10 @@ p {
         height: auto;
         border: none;
         justify-content: center;
+    }
+
+    .go-to:hover {
+        border: none;
     }
 
     .go-to a {
@@ -352,6 +357,10 @@ p {
         height: auto;
         border: none;
         justify-content: center;
+    }
+
+    .go-to:hover {
+        border: none;
     }
 
     .go-to a {
