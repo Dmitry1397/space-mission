@@ -67,7 +67,7 @@
       </div>
   
       <div class="image">
-        <img id="image" src="assets/technology/image-launch-vehicle-portrait.jpg" alt="">
+        <img id="image" src="" alt="">
       </div>
       
     </div>
@@ -88,6 +88,18 @@
         nav.style.display = 'block';
       }
     })
+  </script>
+
+  <script>
+    const image = document.querySelector('#image');
+
+    const x = window.innerWidth;
+
+    if (x < 1100) {
+        image.src = 'assets/technology/image-launch-vehicle-landscape.jpg';
+    } else {
+        image.src = 'assets/technology/image-launch-vehicle-portrait.jpg';
+    } 
   </script>
 </body>
 </html>

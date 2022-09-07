@@ -70,6 +70,7 @@ nav {
     align-items: center;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
+    -webkit-backdrop-filter: blur(81.5485px);
 }
 
 nav ul {
@@ -83,7 +84,6 @@ nav ul {
 
 .link {
     margin: 0 20px;
-    padding: 40px 0;
 }
 
 nav .active {
@@ -96,7 +96,7 @@ nav .active {
 
 .link a {
     display: inline-block;
-    height: 100%;
+    padding: 40px 0;
     text-decoration: none;
     letter-spacing: 2.7px;
     color: hsl(0, 0%, 100%);
@@ -340,7 +340,6 @@ p {
     }
 
     #image {
-        content: url(../assets/technology/image-launch-vehicle-landscape.jpg);
         max-width: 100%;
     }
 
@@ -389,7 +388,7 @@ p {
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px) {
+@media screen and (min-width: 601px) and (max-width: 1100px) {
 
     html {
         background: url(../assets/crew/background-crew-tablet.jpg) no-repeat center / cover;
@@ -495,4 +494,24 @@ p {
         padding: 0;
         text-align: center;
     }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
+
+    .bar {
+        width: 350px;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    .container {
+        padding-left: 100px;
+    }
+
+    .terminology {
+        width: 400px;
+    }
+    
 }

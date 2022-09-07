@@ -14,9 +14,10 @@ function update(index) {
     const description = document.querySelector('#description');
     const x = window.innerWidth;
 
+    
     name.textContent = array[index].name;
     description.textContent = array[index].description;
-    if (x < 1200) {
+    if (x < 1100) {
         image.src = array[index].images.landscape;
     } else {
         image.src = array[index].images.portrait;
