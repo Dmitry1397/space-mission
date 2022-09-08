@@ -10,9 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
   <link rel="stylesheet" href="style/style-crew.css">
 
   <script src="scripts/crew.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
@@ -65,10 +69,39 @@
           </ul>
         </div>
       </div>
-  
-      <div class="photo">
+    
+      <div class="photo" id="photo">
         <img id="image" src="assets/crew/image-douglas-hurley.png" alt="">
       </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="photo">
+                <img id="image" src="assets/crew/image-douglas-hurley.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="photo">
+                <img id="image" src="assets/crew/image-mark-shuttleworth.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="photo">
+                <img id="image" src="assets/crew/image-victor-glover.png" alt="">
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="photo">
+                <img id="image" src="assets/crew/image-anousheh-ansari.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        
     </div>
 
   </div>

@@ -131,7 +131,7 @@ nav .active {
 }
 
 .member {
-    width: 488px;
+    width: max-content;
 }
 
 #role {
@@ -143,6 +143,11 @@ nav .active {
 #name {
     margin-top: 15px;
     margin-bottom: 27px;
+}
+
+.swiper {
+    display: none;
+    width: 100%;
 }
 
 .photo img {
@@ -338,6 +343,14 @@ p {
         text-align: center;
     }
 
+    #photo {
+        display: none;   
+    }
+
+    .swiper {
+        display: block;
+    }
+
     .slider {
         order: 1;
         width: fit-content;
@@ -469,6 +482,14 @@ p {
     #name {
         margin-top: 8px;
         margin-bottom: 16px;
+    }
+
+    #photo {
+        display: none;   
+    }
+    
+    .swiper {
+        display: block;
     }
 
     .slider {

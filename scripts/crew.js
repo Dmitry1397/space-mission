@@ -8,8 +8,26 @@ fetch('scripts/data.json')
     .then((response) => response.json())
     .then((json) => array = json.crew);
 
+const swiper = new Swiper('.swiper', {
+        // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+});
 
+swiper.on('slideChange', function () {
 
+    console.log(swiper.realIndex)
+
+    update(swiper.realIndex);
+
+    buttons.forEach((element, index) => {
+        if (index === swiper.realIndex) {
+            element.setAttribute('class', 'active');
+        } else {
+            element.removeAttribute('class', 'active');
+        }
+    })
+});
 
 function update(index) {    
     const name = document.querySelector('#name');
@@ -32,5 +50,6 @@ buttons.forEach((element, index) => {
         element.setAttribute('class', 'active');
     })
 });
+
 
 
