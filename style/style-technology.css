@@ -138,6 +138,11 @@ nav .active {
     margin-bottom: 17px;
 }
 
+.swiper {
+    display: none;
+    width: 100%;
+}
+
 #switch {
     display: block;
     list-style: none;
@@ -281,6 +286,8 @@ p {
         height: 100vh;
         padding-top: 120px;
         padding-left: 35px;
+
+        z-index: 900;
     }
 
     nav ul {
@@ -321,6 +328,16 @@ p {
 
     .image {
         order: 1;
+    }
+
+    #photo {
+        display: none;   
+    }
+
+    .swiper {
+        display: block;
+        position: relative;
+        z-index: 1;
     }
 
     .switch {
