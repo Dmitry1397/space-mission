@@ -41,11 +41,11 @@ function update(index) {
     description.textContent = array[index].description;
     if (x < 1100) {
         image.forEach((element => {
-            element.src = array[index].images.png;
+            element.src = array[index].images.landscape;
         }));
     } else {
         image.forEach((element => {
-            element.src = array[index].images.png;
+            element.src = array[index].images.portrait;
         }));
     } 
     

@@ -368,6 +368,12 @@ p {
         font-size: 16px;
     }
 
+    
+    #switch button:hover {
+        border: 1px solid hsl(0, 0%, 100%, 0.25);
+        cursor: pointer;
+    }
+
     h1 {
         font-size: 80px;
         line-height: 100px;
@@ -496,6 +502,11 @@ p {
         width: 58px;
         height: 58px;
         font-size: 24px;
+    }
+    
+    #switch button:hover {
+        border: 1px solid hsl(0, 0%, 100%, 0.25);
+        cursor: pointer;
     }
 
     .terminology {
