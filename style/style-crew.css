@@ -284,6 +284,8 @@ p {
         height: 100vh;
         padding-top: 120px;
         padding-left: 35px;
+
+        z-index: 900;
     }
 
     nav ul {
@@ -319,7 +321,6 @@ p {
         order: 1;
         height: 225px;
         margin: 32px 0;
-
         border-bottom: 1px solid hsla(231, 15%, 26%, 1);
     }
 
@@ -349,6 +350,8 @@ p {
 
     .swiper {
         display: block;
+        position: relative;
+        z-index: 1;
     }
 
     .slider {
