@@ -32,7 +32,7 @@ swiper.on('slideChange', function () {
 
 function update(index) {    
     const name = document.querySelector('#name');
-    const image = document.querySelector('#image');
+    const image = document.querySelectorAll('#image');
     const description = document.querySelector('#description');
     const x = window.innerWidth;
 
@@ -40,21 +40,28 @@ function update(index) {
     name.textContent = array[index].name;
     description.textContent = array[index].description;
     if (x < 1100) {
-        image.src = array[index].images.landscape;
+        image.forEach((element => {
+            element.src = array[index].images.png;
+        }));
     } else {
-        image.src = array[index].images.portrait;
+        image.forEach((element => {
+            element.src = array[index].images.png;
+        }));
     } 
     
 }
 
 buttons.forEach((element, index) => {
-    element.addEventListener('click', () => {
-        update(index);
-        buttons.forEach(element => {
-            element.removeAttribute('class', 'active');
+    const x = window.innerWidth;
+    if (x > 1100) {
+        element.addEventListener('click', () => {
+            update(index);
+            buttons.forEach(element => {
+                element.removeAttribute('class', 'active');
+            })
+            element.setAttribute('class', 'active');
         })
-        element.setAttribute('class', 'active');
-    })
+    }
 });
 
 

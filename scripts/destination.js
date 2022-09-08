@@ -45,13 +45,15 @@ function update(index) {
 }
 
 buttons.forEach((element, index) => {
-    element.addEventListener('click', () => {
-        update(index);
-        buttons.forEach(element => {
-            element.removeAttribute('class', 'active');
+    const x = window.innerWidth;
+    if (x > 1100) {
+        element.addEventListener('click', () => {
+            update(index);
+            buttons.forEach(element => {
+                element.removeAttribute('class', 'active');
+            })
+            element.setAttribute('class', 'active');
         })
-        element.setAttribute('class', 'active');
-    })
+    }
 });
-
 

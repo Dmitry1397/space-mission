@@ -369,8 +369,8 @@ p {
     }
 
     #slider button:hover {
-        background: hsl(0, 0%, 100%);
-        cursor: pointer;
+        background: hsl(0, 0%, 100%, 0.17);
+        cursor: alias;
     }
 
     #role {

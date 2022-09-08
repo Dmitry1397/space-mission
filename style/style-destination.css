@@ -301,6 +301,8 @@ p {
         height: 100vh;
         padding-top: 120px;
         padding-left: 35px;
+
+        z-index: 900;
     }
 
     nav ul {
@@ -374,8 +376,8 @@ p {
     }  
 
     .switch button:hover {
-        border-bottom: 3px solid hsl(0, 0%, 100%);
-        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        cursor: alias;
     }
 
     .description h2 {
@@ -496,8 +498,8 @@ p {
     }
 
     .switch button:hover {
-        border-bottom: 3px solid hsl(0, 0%, 100%);
-        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        cursor: alias;
     }
 
     .switch li {
