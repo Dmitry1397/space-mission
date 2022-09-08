@@ -470,6 +470,16 @@ p {
         width: 100%;
     }
 
+    #photo {
+        display: none;   
+    }
+
+    .swiper {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+    
     .switch {
         order: 2;
         margin-top: 56px;

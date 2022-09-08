@@ -138,6 +138,12 @@ nav .active {
     width: 445px;
 }
 
+.swiper {
+    display: none;
+    width: 170px;
+    height: 170px;
+}
+
 .switch {
     display: flex;
     list-style: none;
@@ -341,6 +347,16 @@ p {
         width: 100%;
     }
 
+    #photo {
+        display: none;   
+    }
+
+    .swiper {
+        display: block;
+        position: relative;
+        z-index: 1;
+    }
+
     .switch {
         width: fit-content;
         justify-content: space-between;
@@ -462,6 +478,16 @@ p {
         width: 100%;
         margin-top: 55px;
         padding: 0 70px;
+    }
+
+    #photo {
+        display: none;   
+    }
+
+    .swiper {
+        display: block;
+        position: relative;
+        z-index: 1;
     }
 
     .switch {

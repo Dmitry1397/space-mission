@@ -11,7 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style/style-destination.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
   <script src="scripts/destination.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
@@ -45,8 +50,36 @@
     </h5>
 
     <div class="planet">
-      <div class="pic">
+      <div class="pic" id="photo">
         <img id="image" src="assets/destination/image-moon.png" alt="">
+      </div>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="pic">
+              <img id="image" src="assets/destination/image-moon.png" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="photo">
+              <img id="image" src="assets/destination/image-mars.png" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="photo">
+              <img id="image" src="assets/destination/image-europa.png" alt="">
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="photo">
+              <img id="image" src="assets/destination/image-titan.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="description">
