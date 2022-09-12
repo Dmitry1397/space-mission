@@ -138,11 +138,6 @@ nav .active {
     width: 445px;
 }
 
-.swiper {
-    display: none;
-    width: 170px;
-    height: 170px;
-}
 
 .switch {
     display: flex;
@@ -349,15 +344,6 @@ p {
         width: 100%;
     }
 
-    #photo {
-        display: none;   
-    }
-
-    .swiper {
-        display: block;
-        position: relative;
-        z-index: 1;
-    }
 
     .switch {
         width: fit-content;
@@ -376,7 +362,7 @@ p {
     }  
 
     .switch button:hover {
-        border-bottom: 3px solid transparent;
+        border-bottom: 3px solid hsl(0, 0%, 100%);
         cursor: alias;
     }
 
@@ -482,15 +468,7 @@ p {
         padding: 0 70px;
     }
 
-    #photo {
-        display: none;   
-    }
-
-    .swiper {
-        display: block;
-        position: relative;
-        z-index: 1;
-    }
+    
 
     .switch {
         width: fit-content;
@@ -498,7 +476,7 @@ p {
     }
 
     .switch button:hover {
-        border-bottom: 3px solid transparent;
+        border-bottom: 3px solid hsl(0, 0%, 100%);
         cursor: alias;
     }
 
